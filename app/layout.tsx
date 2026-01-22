@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { SessionProviderClient } from '@/components/providers/SessionProviderClient';
 import './globals.css';
 
 const inter = Inter({
@@ -24,9 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} bg-gradient-to-br from-gray-900 via-indigo-900 to-purple-900 text-white min-h-screen`}>
-        <SessionProviderClient>
-          {children}
-        </SessionProviderClient>
+        {children}
       </body>
     </html>
   );

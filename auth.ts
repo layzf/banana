@@ -1,4 +1,5 @@
-import NextAuth from 'next-auth';
+import NextAuth, { Session } from 'next-auth';
+import { JWT } from 'next-auth/jwt';
 import GoogleProvider from 'next-auth/providers/google';
 
 export const authOptions = {
@@ -10,7 +11,7 @@ export const authOptions = {
   ],
   secret: process.env.NEXTAUTH_SECRET || 'your-default-secret-key',
   callbacks: {
-    async session({ session, token }) {
+    async session({ session, token }: { session: Session; token: JWT }) {
       return session;
     },
   },
