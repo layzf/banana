@@ -14,7 +14,7 @@ export default function Price() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient">Simple, Transparent Pricing</span>
+              <span className="text-gradient">Simples, Transparent Pricing</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Choose the plan that&rsquo;s right for you. No hidden fees, no long-term commitments.
